@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinión del Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Opinión del producto</h1>
+
+        <section class="question">
+            <h2>¿Qué tan satisfecho te sientes con nuestro producto?</h2>
+            <div class="scale-group">
+                <label class="scale-option">
+                    <input type="radio" name="satisfaccion" value="1">
+                    <span>1</span>
+                </label>
+                <label class="scale-option">
+                    <input type="radio" name="satisfaccion" value="2">
+                    <span>2</span>
+                </label>
+                <label class="scale-option">
+                    <input type="radio" name="satisfaccion" value="3">
+                    <span>3</span>
+                </label>
+                <label class="scale-option">
+                    <input type="radio" name="satisfaccion" value="4">
+                    <span>4</span>
+                </label>
+                <label class="scale-option">
+                    <input type="radio" name="satisfaccion" value="5">
+                    <span>5</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="question">
+            <h2>¿En qué área(s) podemos mejorar?</h2>
+            <div class="checkbox-group">
+                <label class="checkbox-option">
+                    <input type="checkbox" name="mejora" value="precio">
+                    <div class="option-content">
+                        <span>Precio</span>
+                    </div>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox" name="mejora" value="atencion">
+                    <div class="option-content">
+                        <span>Atención al cliente</span>
+                    </div>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox" name="mejora" value="funciones">
+                    <div class="option-content">
+                        <span>Funciones</span>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <section class="question">
+            <h2>¿Nos recomendarías a un amigo o compañero de trabajo?</h2>
+            <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="recomendar" value="si">
+                    <div class="option-content">
+                        <span>Sí</span>
+                        <span class="percentage">100%</span>
+                    </div>
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="recomendar" value="no">
+                    <div class="option-content">
+                        <span>No</span>
+                        <span class="percentage">0%</span>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <button class="submit-button" id="submit-btn">Enviar comentarios</button>
+
+        <p class="footer-text">Responses asked</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
